@@ -1,0 +1,156 @@
+@font-face{
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 219, 215);
+    font-family: 'HankenGrotesk';
+}
+.container{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background-color:#ffffff ;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 1rem 3rem rgb(0, 0, 0, 0.2);
+    margin-inline: 1rem;
+}
+.grid-flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+.result{
+    background:linear-gradient(#6743ff, #312be5) ;
+    border-radius: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.7);
+    padding: 2.5rem;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 1.3rem;   
+}
+.result-score{
+    display: grid;
+    place-content: center;
+    background:linear-gradient(#4d22c9, #4633ed) ;
+    border-radius: 50%;
+    width: 192px;
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+}
+.result-score span{
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #ffffff;
+}
+.result h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.result-score p{
+    color: rgb(255, 255, 255, 0.3);
+}
+.summary{
+    padding: 2.5rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.h3{
+    font-weight: 700;
+}
+.reaction h3{
+    color: #ca6c6d ;
+}
+.memory h3{
+    color: #eacd69;
+}
+.verbal h3{
+    color: #44a896;
+}
+.visual h3{
+    color: #333475;
+}
+.reaction,
+.memory,
+.verbal,
+.visual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.reaction{
+    background-color: #fff6f5;
+}
+.memory{
+    background-color: #fffbf2;
+}
+.verbal{
+    background-color: #f2fbfa;
+}
+.visual{
+    background-color: #f3f3fd;
+}
+
+.marks{
+    font-weight: 700;
+    color: rgba(43, 40, 40, 0.3);
+}
+.marks span{
+    color: black;
+}
+.btn{
+    color: white;
+    line-height: 1;
+    background: linear-gradient(#6643ff, #322deb);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(5, 5, 31);
+}
+
+@media (max-width:600px){
+    body{
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    .container{
+        max-width: 24rem;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .result{
+        border-radius: 0 0 2.5rem 2.5rem;
+    }
+}
